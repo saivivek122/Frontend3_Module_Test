@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <input id="search" placeholder="Search By Name or Symbol">
+            <select id="sort-marketCap-by-order">
+                <option>Sort By Mkt Cap</option>
+                <option value="asc">Ascending Order</option>
+                <option value="dsc">Descending Order</option>
+            </select>
+            <select id="sort-percentage-by-order">
+                <option>Sort by Percentage</option>
+                <option value="asc">Ascending Order</option>
+                <option value="dsc">Descending Order</option>
+            </select>
+
+        </div>
+
+        <div class="below">
+            <table id="crypto-table">
+                <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Current Price</th>
+                        <th>Total Volume</th>
+                        <th>Percentage</th>
+                        <th>Market Cap</th>
+                    </tr>
+                </thead>
+                <tbody id="list"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
